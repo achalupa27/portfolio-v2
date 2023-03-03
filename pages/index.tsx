@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next';
+import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/About';
@@ -14,6 +14,7 @@ import { fetchSkills } from '../utils/fetchSkills';
 import { fetchProjects } from '../utils/fetchProjects';
 import { fetchSocials } from '../utils/fetchSocials';
 import { fetchExperiences } from '../utils/fetchExperiences';
+import { ThemeProvider } from 'next-themes';
 
 type Props = {
     pageInfo: PageInfo;
@@ -25,46 +26,48 @@ type Props = {
 
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
     return (
-        <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
-            <Head>
-                <title>Andrew's Portfolio</title>
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
+        <ThemeProvider enableSystem={false} attribute='class'>
+            <div className='dark:bg-[rgb(36,36,36)] bg-gray-100 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
+                <Head>
+                    <title>Andrew C - Portfolio</title>
+                    <link rel='icon' href='/favicon.ico' />
+                </Head>
 
-            <Header socials={socials} />
+                <Header socials={socials} />
 
-            <section id='hero' className='snap-start'>
-                <Hero pageInfo={pageInfo} />
-            </section>
+                <section id='hero' className='snap-start'>
+                    <Hero pageInfo={pageInfo} />
+                </section>
 
-            <section id='about' className='snap-center'>
-                <About pageInfo={pageInfo} />
-            </section>
+                <section id='about' className='snap-center'>
+                    <About pageInfo={pageInfo} />
+                </section>
 
-            <section id='experience' className='snap-center'>
-                <WorkExperience experiences={experiences} />
-            </section>
+                <section id='experience' className='snap-center'>
+                    <WorkExperience experiences={experiences} />
+                </section>
 
-            <section id='skills' className='snap-center'>
-                <Skills skills={skills} />
-            </section>
+                <section id='skills' className='snap-center'>
+                    <Skills skills={skills} />
+                </section>
 
-            <section id='projects' className='snap-center'>
-                <Projects projects={projects} />
-            </section>
+                <section id='projects' className='snap-center'>
+                    <Projects projects={projects} />
+                </section>
 
-            <section id='contact' className='snap-center'>
-                <Contact pageInfo={pageInfo} />
-            </section>
+                <section id='contact' className='snap-center'>
+                    <Contact pageInfo={pageInfo} />
+                </section>
 
-            <Link href='#hero'>
-                <footer className='sticky bottom-5 w-full cursor-pointer'>
-                    <div className='flex items-center justify-center'>
-                        <img className='h-10 w-10 rouded-full filter grayscale hover:grayscale-0 cursor-pointer transition duration-200 ease-in-out' src='https://i.ibb.co/1RVMKvb/avatar.png' alt='' />
-                    </div>
-                </footer>
-            </Link>
-        </div>
+                <Link href='#hero'>
+                    <footer className='sticky bottom-5 w-full cursor-pointer'>
+                        <div className='flex items-center justify-center'>
+                            <img className='h-10 w-10 rouded-full filter grayscale hover:grayscale-0 cursor-pointer transition duration-200 ease-in-out' src='https://i.ibb.co/1RVMKvb/avatar.png' alt='' />
+                        </div>
+                    </footer>
+                </Link>
+            </div>
+        </ThemeProvider>
     );
 };
 

@@ -12,6 +12,18 @@ export default defineType({
       type: 'string',
     },
     {
+      name: 'category',
+      title: 'Category',
+      description: 'Category of skill',
+      type: 'string',
+    },
+    {
+      name: 'level',
+      title: 'Level',
+      description: 'Level of skill: Learning, Novice, Intermediate, Advanced',
+      type: 'string',
+    },
+    {
       name: 'progress',
       title: 'Progress',
       type: 'number',
@@ -25,6 +37,33 @@ export default defineType({
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'background',
+      title: 'Background',
+      description: 'A brief point on your experience with the technology',
+      type: 'string',
+    },
+    {
+      name: 'usedCases',
+      title: 'UsedCases',
+      description: 'A task you accomplished using the technology',
+      type: 'array',
+      of: [{type: 'string'}],
+    },
+    {
+      name: 'usedProjects',
+      title: 'UsedProjects',
+      description: 'Projects you used this technology in',
+      type: 'array',
+      of: [{type: 'string'}],
+    },
+    {
+      name: 'usedWork',
+      title: 'UsedWork',
+      description: 'A job where you used this technology',
+      type: 'array',
+      of: [{type: 'string'}],
     },
   ],
 })

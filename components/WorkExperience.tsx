@@ -8,8 +8,8 @@ type Props = {
 function Experience({ experiences }: Props) {
     return (
         <div className='h-screen flex relative overflow-hodden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Experience</h3>
-            <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-800 dark:text-gray-200 text-2xl'>Experience</h3>
+            <div className='w-full flex space-x-5 mt-12 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80 items-center justify-center'>
                 {experiences?.map((experience) => (
                     <ExperienceCard key={experience._id} experience={experience} />
                 ))}

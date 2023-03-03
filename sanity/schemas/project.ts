@@ -25,6 +25,11 @@ export default defineType({
       type: 'text',
     },
     {
+      name: 'themeColor',
+      title: 'ThemeColor',
+      type: 'text',
+    },
+    {
       name: 'technologies',
       title: 'Technologies',
       type: 'array',

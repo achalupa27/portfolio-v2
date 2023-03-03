@@ -26,6 +26,11 @@ export default defineType({
     {
       name: 'backgroundInformation',
       title: 'BackgroundInformation',
+      type: 'text',
+    },
+    {
+      name: 'personalAbout',
+      title: 'personalAbout',
       type: 'string',
     },
     {

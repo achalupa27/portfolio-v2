@@ -1,3 +1,12 @@
+/// <reference types="react-scripts" />
+declare module '*.svg' {
+    import React = require('react');
+
+    export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>;
+    const src: string;
+    export default src;
+}
+
 interface SanityBody {
     _createdAt: string;
     _id: string;
@@ -17,6 +26,7 @@ export interface PageInfo extends SanityBody {
     _type: 'pageInfo';
     address: string;
     backgroundInformation: string;
+    personalAbout: string;
     email: string;
     role: string;
     heroImage: Image;
@@ -30,6 +40,12 @@ export interface Technology extends SanityBody {
     image: Image;
     progress: number;
     title: string;
+    category: string;
+    level: string;
+    background: string;
+    usedCases: string[];
+    usedProjects: string[];
+    usedWork: string[];
 }
 
 export interface Skill extends SanityBody {
@@ -37,6 +53,12 @@ export interface Skill extends SanityBody {
     image: Image;
     progress: number;
     title: string;
+    category: string;
+    level: string;
+    background: string;
+    usedCases: string[];
+    usedProjects: string[];
+    usedWork: string[];
 }
 
 export interface Experience extends SanityBody {

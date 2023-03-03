@@ -10,18 +10,17 @@ type Props = {
 
 function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
-        words: ['Full Stack Developer.', 'UX Designer.'],
-        loop: true,
-        delaySpeed: 2000,
+        words: ['Full Stack Developer.', 'UX Designer.', 'Andrew Chalupa.'],
+        delaySpeed: 1000,
     });
 
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-            <BackgroundCircles />
+            {/* <BackgroundCircles /> */}
             <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src={urlFor(pageInfo?.heroImage).url()} alt='' />
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 tracking-[15px]'>{pageInfo.role}</h2>
-                <h1 className='text-5xl lg:6xl font-semibold px-10'>
+                <h1 className='text-gray-800 dark:text-gray-200 text-5xl lg:6xl font-semibold px-10 pt-5 mr-3'>
                     <span>{text}</span>
                     <Cursor cursorColor='#0084ff' />
                 </h1>
