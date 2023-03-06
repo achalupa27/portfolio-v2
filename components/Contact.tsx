@@ -25,9 +25,9 @@ function Contact({ pageInfo }: Props) {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-800 dark:text-gray-200 text-2xl'>Contact</h3>
             <div className='flex flex-col space-y-10'>
                 <h4 className='text-4xl font-semibold text-center'>
-                    <span className='text-gray-500 dark:text-gray-100'>Let's talk.</span>
+                    <span className='text-gray-800 dark:text-gray-200 mt-2'>Let's talk.</span>
                 </h4>
-                <div className='space-y-7'>
+                <div className='space-y-3'>
                     <div className='flex flex-col items-center space-x-3 justify-center'>
                         <PhoneIcon className='text-[#0084ff] h-7 w-7 animate-pulse' /> <p className='text-xl text-gray-800 dark:text-gray-200'>{pageInfo?.phoneNumber}</p>
                     </div>

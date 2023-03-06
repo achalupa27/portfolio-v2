@@ -27,7 +27,7 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
     return (
         <ThemeProvider enableSystem={false} attribute='class'>
-            <div className='dark:bg-[rgb(36,36,36)] bg-gray-100 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
+            <div className='dark:bg-gray-900 bg-gray-200 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
                 <Head>
                     <title>Andrew C - Portfolio</title>
                     <link rel='icon' href='/favicon.ico' />

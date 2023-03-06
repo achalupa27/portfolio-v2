@@ -27,7 +27,7 @@ export default defineType({
     {
       name: 'themeColor',
       title: 'ThemeColor',
-      type: 'text',
+      type: 'string',
     },
     {
       name: 'technologies',
@@ -38,6 +38,11 @@ export default defineType({
     {
       name: 'linkToBuild',
       title: 'LinkToBuild',
+      type: 'url',
+    },
+    {
+      name: 'linkToCode',
+      title: 'LinkToCode',
       type: 'url',
     },
   ],

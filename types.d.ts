@@ -1,12 +1,3 @@
-/// <reference types="react-scripts" />
-declare module '*.svg' {
-    import React = require('react');
-
-    export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>;
-    const src: string;
-    export default src;
-}
-
 interface SanityBody {
     _createdAt: string;
     _id: string;
@@ -74,10 +65,12 @@ export interface Experience extends SanityBody {
 }
 
 export interface Project extends SanityBody {
-    title: sting;
+    title: string;
     _type: 'project';
     image: Image;
+    themeColor: string;
     linkToBuild: string;
+    linkToCode: string;
     summary: string;
     technologies: Technology[];
 }

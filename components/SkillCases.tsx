@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { AiFillGithub } from 'react-icons/ai';
 import { Skill } from '../types';
 
 type Props = {
@@ -13,7 +15,7 @@ function SkillCases({ skill, show, close }: Props) {
     }
     return (
         <motion.div className='fixed top-0 left-0 right-0 bottom-0 dark:bg-slate-200/10 bg-gray-300/70 flex items-center justify-center z-10' onClick={close}>
-            <div className='space-y-7 w-[60rem] h-auto dark:bg-[rgb(36,36,36)] bg-gray-200  p-12 rounded-md z-20 shadow-2xl'>
+            <div className='space-y-7 w-[60rem] h-auto dark:bg-gray-900 bg-gray-200  p-12 rounded-md z-20 shadow-2xl'>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='uppercase tracking-[3px] text-gray-500'>
                         {skill.level} - {skill.progress}%
@@ -27,7 +29,14 @@ function SkillCases({ skill, show, close }: Props) {
                 <div className='flex flex-col items-center justify-center'>
                     <div className='uppercase tracking-[3px] text-gray-500'>Use Cases</div>
                     {skill?.usedCases?.map((useCase) => (
-                        <div className='text-[rgb(36,36,36)] dark:text-gray-200 tracking-[3px] text-center'>- {useCase}</div>
+                        <div className='flex space-x-3 text-[rgb(36,36,36)] dark:text-gray-200 tracking-[3px] text-center'>
+                            <p>- {useCase.split('$')[0]}</p>
+                            {useCase.split('$')[1] && (
+                                <Link href={useCase.split('$')[1]} target='_blank'>
+                                    <AiFillGithub className='w-6 h-6 text-gray-800 dark:text-gray-200 hover:text-[#0084ff] dark:hover:text-[#0084ff] transition duration-300 ease-in-out' />
+                                </Link>
+                            )}
+                        </div>
                     ))}
                 </div>
                 {skill?.usedProjects !== undefined && (
