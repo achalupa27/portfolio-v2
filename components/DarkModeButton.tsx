@@ -17,7 +17,7 @@ function DarkModeButton() {
 
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
-    return <button>{currentTheme === 'dark' ? <SunIcon className='h-7 w-7 cursor-pointer text-gray-500 hover:text-[#0084ff] transition duration-300 ease-in-out' onClick={() => setTheme('light')} /> : <MoonIcon className='flex items-center leading-none h-7 w-7 cursor-pointer text-gray-500 hover:text-[#0084ff] transition duration-300 ease-in-out' onClick={() => setTheme('dark')} />}</button>;
+    return <button>{currentTheme === 'dark' ? <SunIcon className='h-7 w-7 cursor-pointer text-amber-600/50 hover:text-amber-600 transition duration-300 ease-in-out' onClick={() => setTheme('light')} /> : <MoonIcon className='flex items-center leading-none h-7 w-7 cursor-pointer text-teal-500/50 hover:text-teal-500 transition duration-300 ease-in-out' onClick={() => setTheme('dark')} />}</button>;
 }
 
 export default DarkModeButton;

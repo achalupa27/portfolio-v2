@@ -1,7 +1,6 @@
 import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import About from '../components/About';
 import Contact from '../components/Contact';
 import WorkExperience from '../components/WorkExperience';
 import Header from '../components/Header';
@@ -27,20 +26,19 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
     return (
         <ThemeProvider enableSystem={false} attribute='class'>
-            <div className='dark:bg-gray-900 bg-gray-200 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
+            <div className='dark:gradient-to-br dark:from-gray-900 dark:to-gray-800 bg-gradient-to-br from-teal-100/70 via-teal-50 to-teal-100/60 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-amber-600/80'>
                 <Head>
                     <title>Andrew C - Portfolio</title>
                     <link rel='icon' href='/favicon.ico' />
+                    <link rel='preconnect' href='https://fonts.googleapis.com' />
+                    <link rel='preconnect' href='https://fonts.gstatic.com' />
+                    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap' rel='stylesheet' />
                 </Head>
 
                 <Header socials={socials} />
 
                 <section id='hero' className='snap-start'>
                     <Hero pageInfo={pageInfo} />
-                </section>
-
-                <section id='about' className='snap-center'>
-                    <About pageInfo={pageInfo} />
                 </section>
 
                 <section id='experience' className='snap-center'>
@@ -51,7 +49,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
                     <Skills skills={skills} />
                 </section>
 
-                <section id='projects' className='snap-center'>
+                <section id='webProjects' className='snap-center'>
                     <Projects projects={projects} />
                 </section>
 
@@ -62,7 +60,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
                 <Link href='#hero'>
                     <footer className='sticky bottom-5 w-full cursor-pointer'>
                         <div className='flex items-center justify-center'>
-                            <img className='h-10 w-10 rouded-full filter grayscale hover:grayscale-0 cursor-pointer transition duration-200 ease-in-out' src='https://i.ibb.co/1RVMKvb/avatar.png' alt='' />
+                            <div className='h-8 w-14 rounded-sm filter grayscale hover:grayscale-0 border border-amber-600 cursor-pointer transition duration-200 ease-in-out' />
                         </div>
                     </footer>
                 </Link>
