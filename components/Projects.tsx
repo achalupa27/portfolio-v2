@@ -36,7 +36,7 @@ function Projects({ projects }: Props) {
             <div className="flex h-[550px] w-[500px] flex-col items-center justify-center rounded-sm border border-teal-500 shadow-lg dark:border-amber-600 dark:bg-gray-900 md:w-[700px] xl:h-[550px] xl:w-[1000px]">
               <motion.h4
                 initial={{ opacity: 0 }}
-                transition={{ delay: 0.8, duration: 1 }}
+                transition={{ delay: 0, duration: 1 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 className="pb-8 text-center text-4xl font-extralight uppercase tracking-[8px] text-teal-500 dark:text-amber-600"
@@ -45,7 +45,7 @@ function Projects({ projects }: Props) {
               </motion.h4>
               <motion.div
                 initial={{ opacity: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ delay: 0.2, duration: 1 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 className={`h-48 w-48 rounded-md p-5`}
@@ -59,7 +59,7 @@ function Projects({ projects }: Props) {
               <div className="max-w-6xl space-y-6 px-0 md:px-10">
                 <motion.div
                   initial={{ opacity: 0 }}
-                  transition={{ delay: 1.3, duration: 1 }}
+                  transition={{ delay: 0.4, duration: 1 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   className="grid grid-cols-8 items-center justify-center space-y-2 space-x-2 pt-8"
@@ -72,7 +72,13 @@ function Projects({ projects }: Props) {
                     />
                   ))}
                 </motion.div>
-                <div className="flex items-center justify-center space-x-6">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{ delay: 0.6, duration: 1 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center justify-center space-x-6"
+                >
                   {project.linkToCode && (
                     <Link href={project?.linkToCode} target="_blank">
                       <AiFillGithub className="h-12 w-12 text-teal-500/50 transition duration-300 ease-in-out hover:text-teal-500 dark:text-amber-600/40 dark:hover:text-amber-600" />
@@ -83,7 +89,7 @@ function Projects({ projects }: Props) {
                       <GlobeAltIcon className="h-12 w-12 text-teal-500/50 transition duration-300 ease-in-out hover:text-teal-500 dark:text-amber-600/40 dark:hover:text-amber-600" />
                     </Link>
                   )}
-                </div>
+                </motion.div>
               </div>
               <p className="text-center text-lg md:text-left">
                 {project?.summary}

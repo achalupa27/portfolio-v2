@@ -6,7 +6,7 @@ import WorkExperience from "../components/WorkExperience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import Skills from "../components/Wisdom";
 import { PageInfo, Skill, Project, Social, Experience } from "../types";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchSkills } from "../utils/fetchSkills";
@@ -14,6 +14,8 @@ import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocials } from "../utils/fetchSocials";
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { ThemeProvider } from "next-themes";
+import Github from "../components/Github";
+import ScrollToTop from "../components/ScrollToTop";
 
 type Props = {
   pageInfo: PageInfo;
@@ -48,11 +50,11 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <WorkExperience experiences={experiences} />
         </section>
 
-        <section id="webProjects" className="snap-center">
+        <section id="websites" className="snap-center">
           <Projects projects={projects} />
         </section>
 
-        <section id="skills" className="snap-center">
+        <section id="wisdom" className="snap-center">
           <Skills skills={skills} />
         </section>
 
@@ -60,13 +62,11 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <Contact pageInfo={pageInfo} />
         </section>
 
-        <Link href="#hero">
-          <footer className="sticky bottom-5 w-full cursor-pointer">
-            <div className="flex items-center justify-center">
-              <div className="h-8 w-14 cursor-pointer rounded-sm border border-teal-500 opacity-50 filter transition duration-200 ease-in-out hover:opacity-100 dark:border-amber-600" />
-            </div>
-          </footer>
-        </Link>
+        {/* <section id="github" className="snap-center">
+          <Github />
+        </section> */}
+
+        <ScrollToTop />
       </div>
     </ThemeProvider>
   );

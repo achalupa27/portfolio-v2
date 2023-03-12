@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { PageInfo } from "../types";
@@ -24,20 +25,25 @@ function Hero({ pageInfo }: Props) {
           <span>{text}</span>
         </h1>
       </div>
-      <div className="absolute bottom-36 pt-5">
-        <Link href="#experience">
+      <motion.div
+        initial={{ y: 500, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="absolute bottom-36 pt-5"
+      >
+        <Link href="#work">
           <button className="hero-button">Work</button>
         </Link>
-        <Link href="#webProjects">
+        <Link href="#websites">
           <button className="hero-button">Websites</button>
         </Link>
-        <Link href="#skills">
+        <Link href="#wisdom">
           <button className="hero-button">Wisdom</button>
         </Link>
         {/* <Link href='#mobileProjects'>
                     <button className='hero-button'>Mobile</button>
                 </Link> */}
-      </div>
+      </motion.div>
     </div>
   );
 }
