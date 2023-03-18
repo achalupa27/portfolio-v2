@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 @layer components {
-    .hero-button {
-        @apply px-6 py-2 uppercase text-sm tracking-[4px] text-teal-500/60 hover:text-teal-500 dark:text-amber-600/60 hover:underline underline-offset-8 dark:hover:text-amber-600 transition duration-300 ease-in-out;
-    }
+  .hero-button {
+    @apply px-3 py-2 text-xs uppercase tracking-[4px] text-teal-500/60 underline-offset-8 transition duration-300 ease-in-out hover:text-teal-500 hover:underline dark:text-amber-600/60 dark:hover:text-amber-600 md:px-6 md:text-sm;
+  }
 
-    .contact-input {
-        @apply outline-none bg-teal-200/10 dark:bg-slate-400/10 rounded-sm border-b px-6 py-4 transition-all  border-teal-400 dark:border-amber-900/40 dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600  dark:focus:text-amber-600  dark:hover:border-amber-600/40 text-teal-500 placeholder-teal-500/50 focus:border-teal-600  focus:text-teal-500  hover:border-teal-500/40;
-    }
+  .contact-input {
+    @apply rounded-sm border-b border-teal-400 bg-teal-200/10 px-6 py-4 text-teal-500 placeholder-teal-500/50  outline-none transition-all focus:border-teal-600 focus:text-teal-500 hover:border-teal-500/40  dark:border-amber-900/40  dark:bg-slate-400/10 dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600  dark:focus:text-amber-600  dark:hover:border-amber-600/40;
+  }
+
+  .gradient-gold {
+    @apply bg-gradient-to-br from-[#f59e0b] via-[#ea580c] to-[#d97706] bg-clip-text text-amber-600/40;
+  }
+
+  .gradient-gold-small {
+    @apply bg-gradient-to-tr from-[#ea580c] via-[#f59e0b] to-[#ea580c] bg-clip-text text-amber-600/40;
+  }
 }

@@ -22,15 +22,7 @@ function Skills({ skills }: Props) {
         <h3 className="absolute top-24 text-2xl font-light uppercase tracking-[20px] text-teal-500 dark:text-amber-600">
           Wisdom
         </h3>
-        <h4 className="absolute top-36 text-xs uppercase tracking-[3px] text-teal-500/60 dark:text-amber-600/50 md:text-sm">
-          <span className=" text-teal-500 dark:text-amber-600">Hover</span> for
-          proficiency.
-          <span className="text-teal-500 dark:text-amber-600"> Click</span> for
-          use cases.
-        </h4>
-        <h4 className="my-4 text-xs uppercase tracking-[3px] text-teal-500 dark:text-amber-600 md:text-sm">
-          Advanced
-        </h4>
+        <h4 className="absolute top-36 text-xs uppercase tracking-[3px] text-teal-500/60 dark:text-amber-600/50 md:text-sm"></h4>
         <div className="grid grid-cols-6 justify-center gap-3 lg:grid-cols-8 lg:gap-5">
           {skills.map((skill) =>
             skill.level === "Advanced" ? (
@@ -43,9 +35,6 @@ function Skills({ skills }: Props) {
             ) : null
           )}
         </div>
-        <h4 className="my-4 text-xs uppercase tracking-[3px] text-teal-500 dark:text-amber-600 md:text-sm">
-          Intermediate
-        </h4>
         <div className="grid grid-cols-6 gap-3 lg:grid-cols-8 lg:gap-5">
           {skills.map((skill) =>
             skill.level === "Intermediate" ? (
@@ -58,9 +47,6 @@ function Skills({ skills }: Props) {
             ) : null
           )}
         </div>
-        <h4 className="my-4 text-xs uppercase tracking-[3px] text-teal-500 dark:text-amber-600 md:text-sm">
-          Novice
-        </h4>
         <div className="grid grid-cols-6 gap-3 lg:grid-cols-8 lg:gap-5">
           {skills.map((skill) =>
             skill.level === "Novice" ? (

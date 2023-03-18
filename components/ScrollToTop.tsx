@@ -1,37 +1,36 @@
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 function ScrollToTop() {
-  // const [visible, setVisible] = useState(false);
+  const [show, handleShow] = useState(true);
 
-  // const toggleVisible = () => {
-  //   const scrolled = document.documentElement.scrollTop;
-  //   if (scrolled > 300) {
-  //     setVisible(true);
-  //   } else if (scrolled <= 300) {
-  //     setVisible(false);
-  //   }
-  // };
+  const transitionNavBar = () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 100) {
+      handleShow(true);
+    } else {
+      console.log("true");
+      handleShow(false);
+    }
+  };
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavBar);
+    return () => window.removeEventListener("scroll", transitionNavBar);
+  }, []);
 
-  // window.addEventListener("scroll", toggleVisible);
-
-  return (
-    <footer className="sticky bottom-5 w-full cursor-pointer">
-      <div className="flex items-center justify-center">
-        <div
-          className="flex h-8 w-14 cursor-pointer items-center justify-center rounded-sm border border-teal-500 bg-gray-900 opacity-50 filter transition duration-200 ease-in-out hover:opacity-100 dark:border-amber-600"
-          // onClick={scrollToTop}
-        >
-          <div className="h-[1px] w-8 border dark:border-amber-600"></div>
+  return show ? (
+    <Link href="#hero">
+      <footer className="sticky bottom-5 w-full cursor-pointer">
+        <div className="flex items-center justify-center">
+          <div className="flex h-8 w-14 cursor-pointer items-center justify-center border border-teal-500 bg-gray-900 opacity-50 filter transition duration-200 ease-in-out hover:opacity-100 dark:border-amber-600">
+            <div className="h-[1px] w-8 border dark:border-amber-600"></div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </Link>
+  ) : (
+    <></>
   );
 }
 

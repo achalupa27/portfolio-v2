@@ -1,48 +1,34 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { PageInfo } from "../types";
-import BackgroundCircles from "./BackgroundCircles";
+import PersonalCard from "./PersonalCard";
+import ScrollToTop from "./ScrollToTop";
 
-type Props = {
-  pageInfo: PageInfo;
-};
-
-function Hero({ pageInfo }: Props) {
-  const [text, count] = useTypewriter({
-    words: ["Full Stack Developer.", "UX Designer.", "Andrew Chalupa"],
-    delaySpeed: 1000,
-  });
-
+function Hero() {
   return (
     <div className="relative flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
-      <BackgroundCircles />
-      <div className="z-20 pt-5 md:pt-0">
-        <h2 className="font-sans text-xs font-light uppercase tracking-[15px] text-teal-500 dark:text-amber-600 md:text-sm">
-          {pageInfo.role}
-        </h2>
-        <h1 className="px-10 pt-2 text-4xl font-thin uppercase tracking-[7px] text-teal-500 dark:text-amber-600 md:pt-5 md:text-5xl">
-          <span>{text}</span>
-        </h1>
-      </div>
+      <PersonalCard />
       <motion.div
         initial={{ y: 500, opacity: 0, scale: 0.5 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute bottom-36 pt-5"
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-16 pt-5 md:bottom-24"
       >
         <Link href="#work">
-          <button className="hero-button">Work</button>
+          <button className="hero-button">
+            <span className="gradient-gold-small">W</span>ork
+          </button>
         </Link>
         <Link href="#websites">
-          <button className="hero-button">Websites</button>
+          <button className="hero-button">
+            <span className="gradient-gold-small">W</span>ebsites
+          </button>
         </Link>
         <Link href="#wisdom">
-          <button className="hero-button">Wisdom</button>
+          <button className="hero-button">
+            <span className="gradient-gold-small">W</span>isdom
+          </button>
         </Link>
-        {/* <Link href='#mobileProjects'>
-                    <button className='hero-button'>Mobile</button>
-                </Link> */}
       </motion.div>
     </div>
   );

@@ -6,9 +6,9 @@ type Props = {
   experience: Experience;
 };
 
-function ExperienceCard({ experience }: Props) {
+function WorkCard({ experience }: Props) {
   return (
-    <article className="flex h-[550px] w-[500px] cursor-pointer snap-center flex-col items-center justify-center space-y-7 overflow-hidden rounded-sm border border-teal-500 shadow-lg transition-opacity duration-200 dark:border-amber-600 dark:bg-gray-900 md:w-[700px] xl:h-[550px] xl:w-[1000px]">
+    <article className="flex h-[550px] w-[500px] cursor-pointer snap-center flex-col items-center justify-center space-y-7 overflow-hidden  border border-teal-500 shadow-lg transition-opacity duration-200 dark:border-amber-600 dark:bg-gray-900 md:w-[700px] xl:h-[550px] xl:w-[1000px]">
       <motion.img
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -30,12 +30,12 @@ function ExperienceCard({ experience }: Props) {
         </p>
         <div className="my-2 flex space-x-2">
           {experience.technologies.map((technology) => (
-            <img
-              key={technology._id}
-              className="h-10 w-10"
-              src={urlFor(technology.image).url()}
-              alt=""
-            />
+            <div key={technology._id} className="border border-amber-500 p-2">
+              <img
+                className="h-7 w-7 lg:h-10 lg:w-10"
+                src={urlFor(technology.image).url()}
+              />
+            </div>
           ))}
         </div>
         {/* <ul className='space-y-4 ml-5 text-lg text-gray-800 dark:text-gray-200 h-80 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#0084ff]/80'>
@@ -50,4 +50,4 @@ function ExperienceCard({ experience }: Props) {
   );
 }
 
-export default ExperienceCard;
+export default WorkCard;
