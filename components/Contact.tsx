@@ -1,7 +1,5 @@
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { PageInfo } from "../types";
-import Image from "next/image";
 import { AiOutlineSend } from "react-icons/ai";
 
 type Inputs = {
@@ -30,7 +28,7 @@ function Contact({ pageInfo }: Props) {
         <div className="space-y-4"></div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="mx-auto flex w-[450px] flex-col space-y-2 md:w-[550px] lg:w-fit"
+          className="mx-auto flex w-[373px] flex-col space-y-2 sm:w-[450px] md:w-[550px] lg:w-fit"
         >
           <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0">
             <input
@@ -59,7 +57,7 @@ function Contact({ pageInfo }: Props) {
           />
           <button
             type="submit"
-            className="flex items-center justify-center space-x-3 rounded-sm border border-teal-500 bg-transparent py-4 px-10 text-teal-500 transition duration-300  ease-in-out hover:bg-teal-500 hover:text-sky-50 dark:border-amber-600 dark:text-amber-600 dark:hover:bg-amber-600 dark:hover:text-gray-900"
+            className="flex items-center justify-center space-x-3 rounded-xl border border-blue-500 bg-transparent py-4 px-10 text-blue-500 transition duration-300 ease-in-out  hover:bg-blue-500 hover:text-sky-50 dark:rounded-none dark:border-amber-600 dark:text-amber-600 dark:hover:bg-amber-600 dark:hover:text-gray-900"
           >
             <AiOutlineSend className="h-6 w-6" />
           </button>

@@ -18,26 +18,13 @@ function PersonalCard({}: Props) {
     },
   };
 
-  const reveal = {
-    hidden: {
-      width: 0,
-    },
-    visible: {
-      width: "669",
-      transition: {
-        delay: 1.4,
-        duration: 1.4,
-      },
-    },
-  };
-
   const [text, count] = useTypewriter({
     words: ["Full Stack Developer.", "UX Designer.", "Andrew Chalupa"],
     delaySpeed: 1000,
   });
 
   return (
-    <div className="relative cursor-pointer shadow-xl transition duration-500 hover:shadow-amber-700/20">
+    <div className="relative cursor-pointer shadow-xl transition duration-500 hover:shadow-blue-900/20 dark:hover:shadow-amber-700/20">
       <motion.svg
         viewBox="0 0 670 334"
         xmlns="http://www.w3.org/2000/svg"
@@ -88,10 +75,10 @@ function PersonalCard({}: Props) {
         transition={{ delay: 1.4, duration: 1 }}
         className="absolute top-16 z-20 mx-auto w-full sm:top-[88px] md:top-32 md:pb-5"
       >
-        <h1 className="sm:font-extrathin cursor-pointer select-none px-10 text-xl font-extralight uppercase tracking-[7px] text-teal-500 dark:text-amber-600 sm:text-3xl md:text-5xl md:font-thin">
+        <h1 className="sm:font-extrathin cursor-pointer select-none px-10 text-xl font-extralight uppercase tracking-[7px] text-blue-500 dark:text-amber-600 sm:text-3xl md:text-5xl md:font-thin">
           <span className="dark:gradient-gold">Andrew Chalupa</span>
         </h1>
-        <h2 className="cursor-pointer select-none pt-1 font-sans text-xs font-light uppercase tracking-[9px] text-teal-500 dark:text-amber-600 sm:text-sm sm:tracking-[15px] md:pt-4">
+        <h2 className="cursor-pointer select-none pt-1 font-sans text-xs font-light uppercase tracking-[9px] text-blue-500 dark:text-amber-600 sm:text-sm sm:tracking-[15px] md:pt-4">
           <span className="dark:gradient-gold">Software Engineer</span>
         </h2>
       </motion.div>

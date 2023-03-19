@@ -16,17 +16,19 @@ function Hero() {
       >
         <Link href="#work">
           <button className="hero-button">
-            <span className="gradient-gold-small">W</span>ork
+            <span className="dark:gradient-gold-small text-blue-500">W</span>ork
           </button>
         </Link>
         <Link href="#websites">
           <button className="hero-button">
-            <span className="gradient-gold-small">W</span>ebsites
+            <span className="dark:gradient-gold-small text-blue-500">W</span>
+            ebsites
           </button>
         </Link>
         <Link href="#wisdom">
           <button className="hero-button">
-            <span className="gradient-gold-small">W</span>isdom
+            <span className="dark:gradient-gold-small text-blue-500">W</span>
+            isdom
           </button>
         </Link>
       </motion.div>

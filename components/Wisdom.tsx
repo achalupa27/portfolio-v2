@@ -19,7 +19,7 @@ function Skills({ skills }: Props) {
         transition={{ duration: 1.5 }}
         className="relative mx-auto flex h-screen min-h-screen max-w-[2000px] flex-col items-center justify-center text-center xl:px-10"
       >
-        <h3 className="absolute top-24 text-2xl font-light uppercase tracking-[20px] text-teal-500 dark:text-amber-600">
+        <h3 className="absolute top-24 text-2xl font-light uppercase tracking-[20px] text-blue-500 dark:text-amber-600">
           Wisdom
         </h3>
         <div className="grid grid-cols-6 gap-3 lg:grid-cols-8 lg:gap-5">

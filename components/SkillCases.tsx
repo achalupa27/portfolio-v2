@@ -18,7 +18,7 @@ function SkillCases({ skill, show, close }: Props) {
       className="fixed top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center bg-gray-300/70 dark:bg-slate-200/10"
       onClick={close}
     >
-      <div className="z-20 h-auto w-[60rem] space-y-7 rounded-sm border border-teal-500 bg-gray-200 p-12 shadow-2xl dark:border-amber-600 dark:bg-gray-900">
+      <div className="z-20 h-auto w-[60rem] space-y-7 rounded-sm border border-blue-500 bg-gray-200 p-12 shadow-2xl dark:border-amber-600 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center">
           <div className="uppercase tracking-[3px] text-gray-500">
             {skill.level} - {skill.progress}%

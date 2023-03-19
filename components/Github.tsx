@@ -19,7 +19,7 @@ function Github({ projects }: Props) {
       transition={{ duration: 1.5 }}
       className="relative z-0 mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly text-left md:flex-row"
     >
-      <h3 className="dark:gradient-gold absolute top-24 text-2xl font-light uppercase tracking-[20px] text-teal-500">
+      <h3 className="dark:gradient-gold absolute top-24 text-2xl font-light uppercase tracking-[20px] text-blue-500">
         Github
       </h3>
       <Swiper

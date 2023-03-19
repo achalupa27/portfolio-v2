@@ -23,7 +23,7 @@ function ScrollToTop() {
     <Link href="#hero">
       <footer className="sticky bottom-5 w-full cursor-pointer">
         <div className="flex items-center justify-center">
-          <div className="flex h-8 w-14 cursor-pointer items-center justify-center border border-teal-500 bg-gray-900 opacity-50 filter transition duration-200 ease-in-out hover:opacity-100 dark:border-amber-600">
+          <div className="flex h-8 w-14 cursor-pointer items-center justify-center border border-blue-500 bg-gray-900 opacity-50 filter transition duration-200 ease-in-out hover:opacity-100 dark:border-amber-600">
             <div className="h-[1px] w-8 border dark:border-amber-600"></div>
           </div>
         </div>

@@ -26,7 +26,7 @@ function DarkModeButton() {
         />
       ) : (
         <MoonIcon
-          className="md:w-7cursor-pointer flex h-6 w-6 items-center  leading-none text-teal-500/50 transition duration-300 ease-in-out hover:text-teal-500 md:h-7"
+          className="md:w-7cursor-pointer flex h-6 w-6 items-center  leading-none text-blue-500/50 transition duration-300 ease-in-out hover:text-blue-500 md:h-7"
           onClick={() => setTheme("dark")}
         />
       )}

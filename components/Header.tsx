@@ -19,7 +19,7 @@ function Header() {
         className="ml-6 flex cursor-pointer items-center"
       >
         <Link href="#github">
-          <AiFillGithub className="h-6 w-6 text-teal-500/50 transition duration-300 ease-in-out hover:text-teal-500 dark:text-amber-600/50 dark:hover:text-amber-600 md:h-7 md:w-7 " />
+          <AiFillGithub className="h-6 w-6 text-blue-500/50 transition duration-300 ease-in-out hover:text-blue-500 dark:text-amber-600/50 dark:hover:text-amber-600 md:h-7 md:w-7 " />
         </Link>
       </motion.div>
       <motion.div
@@ -37,7 +37,7 @@ function Header() {
           transition={{ delay: 1, duration: 1 }}
           className="mr-6 flex cursor-pointer items-center"
         >
-          <EnvelopeIcon className="h-6 w-6 text-teal-500/50 underline-offset-8 transition duration-300 ease-in-out hover:text-teal-500 hover:underline dark:text-amber-600/50 dark:hover:text-amber-600 md:h-7 md:w-7" />
+          <EnvelopeIcon className="h-6 w-6 text-blue-500/50 underline-offset-8 transition duration-300 ease-in-out hover:text-blue-500 hover:underline dark:text-amber-600/50 dark:hover:text-amber-600 md:h-7 md:w-7" />
         </motion.div>
       </Link>
     </header>

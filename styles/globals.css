@@ -4,11 +4,11 @@
 
 @layer components {
   .hero-button {
-    @apply px-3 py-2 text-xs uppercase tracking-[4px] text-teal-500/60 underline-offset-8 transition duration-300 ease-in-out hover:text-teal-500 hover:underline dark:text-amber-600/60 dark:hover:text-amber-600 md:px-6 md:text-sm;
+    @apply px-3 py-2 text-xs uppercase tracking-[4px] text-blue-500/60 underline-offset-8 transition duration-300 ease-in-out hover:text-blue-500 hover:underline dark:text-amber-600/60 dark:hover:text-amber-600 md:px-6 md:text-sm;
   }
 
   .contact-input {
-    @apply rounded-sm border-b border-teal-400 bg-teal-200/10 px-6 py-4 text-teal-500 placeholder-teal-500/50  outline-none transition-all focus:border-teal-600 focus:text-teal-500 hover:border-teal-500/40  dark:border-amber-900/40  dark:bg-slate-400/10 dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600  dark:focus:text-amber-600  dark:hover:border-amber-600/40;
+    @apply border-b border-blue-400 bg-blue-200/10 px-6 py-4 text-blue-500 placeholder-blue-500/50 outline-none transition-all focus:border-blue-600 focus:text-blue-500 hover:border-blue-500/40 dark:border-amber-900/40  dark:bg-slate-400/10 dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600  dark:focus:text-amber-600  dark:hover:border-amber-600/40;
   }
 
   .gradient-gold {
