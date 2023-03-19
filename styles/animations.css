@@ -13,22 +13,42 @@
   }
 } */
 
-.mySwiper .swiper-pagination-bullet-active {
+.dark .mySwiper .swiper-pagination-bullet-active {
   background: #f97316;
 }
 
-.mySwiper .swiper-button-prev {
+.dark .mySwiper .swiper-button-prev {
   color: #f97316;
+}
+
+.dark .mySwiper .swiper-button-prev:hover {
+  color: #ea580c;
+}
+
+.dark .mySwiper .swiper-button-next {
+  color: #f97316;
+}
+
+.dark .mySwiper .swiper-button-next:hover {
+  color: #ea580c;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #60a5fa;
+}
+
+.mySwiper .swiper-button-prev {
+  color: #60a5fa;
 }
 
 .mySwiper .swiper-button-prev:hover {
-  color: #ea580c;
+  color: #3b82f6;
 }
 
 .mySwiper .swiper-button-next {
-  color: #f97316;
+  color: #60a5fa;
 }
 
 .mySwiper .swiper-button-next:hover {
-  color: #ea580c;
+  color: #3b82f6;
 }

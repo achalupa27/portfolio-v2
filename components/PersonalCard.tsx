@@ -24,7 +24,7 @@ function PersonalCard({}: Props) {
   });
 
   return (
-    <div className="relative cursor-pointer shadow-xl transition duration-500 hover:shadow-blue-900/20 dark:hover:shadow-amber-700/20">
+    <div className="relative cursor-pointer shadow-xl transition duration-500 hover:shadow-gray-900/20 dark:hover:shadow-amber-700/20">
       <motion.svg
         viewBox="0 0 670 334"
         xmlns="http://www.w3.org/2000/svg"

@@ -10,8 +10,8 @@ type Props = {
 const WebsiteCard = ({ project }: Props) => {
   return (
     <div className="flex items-center justify-center p-20 md:p-44">
-      <div className="flex h-[550px] w-[500px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-blue-400 bg-white  shadow-xl transition duration-500 hover:shadow-amber-700/20 dark:rounded-none dark:border-amber-600 dark:bg-gray-900 dark:hover:bg-[#111827] md:w-[700px] xl:h-[550px] xl:w-[1000px]">
-        <h4 className="pb-8 text-center text-4xl font-extralight uppercase tracking-[8px] text-blue-400 dark:text-amber-600">
+      <div className="flex h-[550px] w-[500px] cursor-pointer flex-col items-center justify-center rounded-3xl border border-blue-400 bg-white  shadow-xl transition duration-500 hover:shadow-gray-900/20 dark:rounded-none dark:border-amber-600 dark:bg-gray-900 dark:hover:bg-[#111827] dark:hover:shadow-amber-700/20 md:w-[700px] xl:h-[550px] xl:w-[1000px]">
+        <h4 className="pb-8 text-center text-4xl font-extralight tracking-[8px] text-blue-400 dark:uppercase dark:text-amber-600">
           {project?.title}
         </h4>
 

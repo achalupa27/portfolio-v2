@@ -4,7 +4,7 @@
 
 @layer components {
   .hero-button {
-    @apply px-3 py-2 text-xs uppercase tracking-[4px] text-blue-500/60 underline-offset-8 transition duration-300 ease-in-out hover:text-blue-500 hover:underline dark:text-amber-600/60 dark:hover:text-amber-600 md:px-6 md:text-sm;
+    @apply px-3 py-2 text-xs tracking-[4px] text-blue-500/60 underline-offset-8 transition duration-300 ease-in-out hover:text-blue-500 hover:underline dark:uppercase dark:text-amber-600/60 dark:hover:text-amber-600 md:px-6 md:text-sm;
   }
 
   .contact-input {
