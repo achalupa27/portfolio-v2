@@ -43,9 +43,15 @@ function PersonalCard({}: Props) {
             <stop offset="100%" stopColor="#d97706" />
           </linearGradient>
         </defs>
-        <motion.path
-          d="M0 0.5 L669.5 0.5 L669.5 332.5 L0.5 332.5 Z"
-          stroke="rgb(217 119 60)"
+        <motion.rect
+          className="personalCardInit"
+          x="0.5"
+          y="0.5"
+          // rx="24"
+          // ry="24"
+          width="669"
+          height="333"
+          stroke="#60a5fa"
           strokeWidth="1"
           shapeRendering="crispEdges"
           fill="none"
@@ -55,13 +61,17 @@ function PersonalCard({}: Props) {
           animate="visible"
         />
         <motion.rect
+          className="personalCard"
           x="0.5"
           y="0.5"
+          // rx="24"
+          // ry="24"
           width="669"
-          height="332"
-          stroke="url(#border-gradient)"
+          height="333"
+          stroke="#60a5fa"
+          // stroke="url(#border-gradient)"
           strokeWidth="1"
-          fill="#111827"
+          fill="white"
           shapeRendering="crispEdges"
           vectorEffect="non-scaling-stroke"
           initial={{ opacity: 0 }}
@@ -75,10 +85,10 @@ function PersonalCard({}: Props) {
         transition={{ delay: 1.4, duration: 1 }}
         className="absolute top-16 z-20 mx-auto w-full sm:top-[88px] md:top-32 md:pb-5"
       >
-        <h1 className="sm:font-extrathin cursor-pointer select-none px-10 text-xl font-extralight uppercase tracking-[7px] text-blue-500 dark:text-amber-600 sm:text-3xl md:text-5xl md:font-thin">
+        <h1 className="sm:font-extrathin cursor-pointer select-none px-10 text-xl font-extralight tracking-[7px] text-blue-500 dark:uppercase dark:text-amber-600 sm:text-3xl md:text-5xl md:font-thin">
           <span className="dark:gradient-gold">Andrew Chalupa</span>
         </h1>
-        <h2 className="cursor-pointer select-none pt-1 font-sans text-xs font-light uppercase tracking-[9px] text-blue-500 dark:text-amber-600 sm:text-sm sm:tracking-[15px] md:pt-4">
+        <h2 className="cursor-pointer select-none pt-1 font-sans text-xs font-light tracking-[9px] text-blue-500 dark:uppercase dark:text-amber-600 sm:text-sm sm:tracking-[15px] md:pt-4">
           <span className="dark:gradient-gold">Software Engineer</span>
         </h2>
       </motion.div>

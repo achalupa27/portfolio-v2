@@ -57,7 +57,7 @@ function Contact({ pageInfo }: Props) {
           />
           <button
             type="submit"
-            className="flex items-center justify-center space-x-3 rounded-xl border border-blue-500 bg-transparent py-4 px-10 text-blue-500 transition duration-300 ease-in-out  hover:bg-blue-500 hover:text-sky-50 dark:rounded-none dark:border-amber-600 dark:text-amber-600 dark:hover:bg-amber-600 dark:hover:text-gray-900"
+            className="flex items-center justify-center space-x-3 rounded-lg border border-blue-500 bg-transparent py-4 px-10 text-blue-500 transition duration-300 ease-in-out  hover:bg-blue-500 hover:text-sky-50 dark:rounded-none dark:border-amber-600 dark:text-amber-600 dark:hover:bg-amber-600 dark:hover:text-gray-900"
           >
             <AiOutlineSend className="h-6 w-6" />
           </button>

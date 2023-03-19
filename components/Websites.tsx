@@ -18,9 +18,9 @@ function Websites({ projects }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative z-0 mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly text-left md:flex-row"
+      className="relative mx-auto flex h-screen max-w-7xl flex-row items-center justify-evenly"
     >
-      <h3 className="dark:gradient-gold absolute top-24 text-center text-2xl font-light tracking-[20px] text-blue-400 dark:uppercase">
+      <h3 className="dark:gradient-gold absolute top-20 text-2xl font-light tracking-[20px] text-blue-400 dark:uppercase sm:top-24">
         Websites
       </h3>
       <Swiper

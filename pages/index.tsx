@@ -28,7 +28,7 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <ThemeProvider enableSystem={false} attribute="class">
-      <div className="dark:gradient-to-br to-teal-gray/60 z-0 h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth bg-gradient-to-br from-gray-100/30 via-gray-50 to-gray-100 text-white overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-amber-600/80 dark:from-gray-900 dark:to-gray-800">
+      <div className="dark:gradient-to-br to-teal-gray/60 z-0 h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth bg-gradient-to-br from-gray-100/30 via-gray-50 to-gray-100 text-white overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-blue-400 dark:from-gray-900 dark:to-gray-800 dark:scrollbar-thumb-amber-600/80">
         <Header />
 
         <section id="hero" className="snap-start">

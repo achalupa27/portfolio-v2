@@ -13,42 +13,11 @@
   }
 } */
 
-.dark .mySwiper .swiper-pagination-bullet-active {
-  background: #f97316;
+.dark .personalCard {
+  fill: #111827;
+  stroke: rgb(217 119 60); /* Need to change this to gradient */
 }
 
-.dark .mySwiper .swiper-button-prev {
-  color: #f97316;
-}
-
-.dark .mySwiper .swiper-button-prev:hover {
-  color: #ea580c;
-}
-
-.dark .mySwiper .swiper-button-next {
-  color: #f97316;
-}
-
-.dark .mySwiper .swiper-button-next:hover {
-  color: #ea580c;
-}
-
-.mySwiper .swiper-pagination-bullet-active {
-  background: #60a5fa;
-}
-
-.mySwiper .swiper-button-prev {
-  color: #60a5fa;
-}
-
-.mySwiper .swiper-button-prev:hover {
-  color: #3b82f6;
-}
-
-.mySwiper .swiper-button-next {
-  color: #60a5fa;
-}
-
-.mySwiper .swiper-button-next:hover {
-  color: #3b82f6;
+.dark .personalCardInit {
+  stroke: rgb(217 119 60);
 }
