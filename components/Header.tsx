@@ -18,7 +18,7 @@ function Header() {
         transition={{ delay: 1, duration: 1 }}
         className="ml-6 flex cursor-pointer items-center"
       >
-        <Link href="https://github.com/achalupa27" target="_blank">
+        <Link href="#github">
           <AiFillGithub className="h-6 w-6 text-teal-500/50 transition duration-300 ease-in-out hover:text-teal-500 dark:text-amber-600/50 dark:hover:text-amber-600 md:h-7 md:w-7 " />
         </Link>
       </motion.div>

@@ -30,6 +30,11 @@ export default defineType({
       type: 'string',
     },
     {
+      name: 'isShowcase',
+      title: 'Showcase?',
+      type: 'boolean',
+    },
+    {
       name: 'technologies',
       title: 'Technologies',
       type: 'array',

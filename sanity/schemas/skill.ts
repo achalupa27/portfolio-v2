@@ -18,6 +18,11 @@ export default defineType({
       type: 'string',
     },
     {
+      name: 'isShowcase',
+      title: 'Showcase?',
+      type: 'boolean',
+    },
+    {
       name: 'level',
       title: 'Level',
       description: 'Level of skill: Learning, Novice, Intermediate, Advanced',

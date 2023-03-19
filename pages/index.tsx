@@ -15,6 +15,7 @@ import { fetchSocials } from "../utils/fetchSocials";
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "../components/ScrollToTop";
+import Github from "../components/Github";
 
 type Props = {
   pageInfo: PageInfo;
@@ -50,9 +51,9 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <Contact pageInfo={pageInfo} />
         </section>
 
-        {/* <section id="github" className="snap-center">
-          <Github />
-        </section> */}
+        <section id="github" className="snap-center">
+          <Github projects={projects} />
+        </section>
 
         {/* <ScrollToTop /> */}
       </div>

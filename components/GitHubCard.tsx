@@ -8,7 +8,7 @@ type Props = {
   project: any;
 };
 
-const WebsiteCard = ({ project }: Props) => {
+const GitHubCard = ({ project }: Props) => {
   return (
     <div className="flex items-center justify-center p-20 md:p-44">
       <div className="flex h-[550px] w-[500px] cursor-pointer flex-col items-center justify-center border border-blue-400 shadow-xl transition duration-500 hover:shadow-amber-700/20 dark:border-amber-600 dark:bg-gray-900 dark:hover:bg-[#111827] md:w-[700px] xl:h-[550px] xl:w-[1000px]">
@@ -53,4 +53,4 @@ const WebsiteCard = ({ project }: Props) => {
   );
 };
 
-export default WebsiteCard;
+export default GitHubCard;

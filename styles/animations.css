@@ -12,3 +12,23 @@
     stroke-dashoffset: 0;
   }
 } */
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #f97316;
+}
+
+.mySwiper .swiper-button-prev {
+  color: #f97316;
+}
+
+.mySwiper .swiper-button-prev:hover {
+  color: #ea580c;
+}
+
+.mySwiper .swiper-button-next {
+  color: #f97316;
+}
+
+.mySwiper .swiper-button-next:hover {
+  color: #ea580c;
+}
