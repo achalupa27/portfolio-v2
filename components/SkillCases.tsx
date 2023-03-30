@@ -27,14 +27,16 @@ function SkillCases({ skill, show, close }: Props) {
             - {skill.title} -
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <div className="uppercase tracking-[3px] text-gray-500">
-            Background
+        {skill?.background && (
+          <div className="flex flex-col items-center justify-center">
+            <div className="uppercase tracking-[3px] text-gray-500">
+              Background
+            </div>
+            <div className="text-center tracking-[3px] text-gray-800 dark:text-gray-200">
+              {skill?.background}
+            </div>
           </div>
-          <div className="text-center tracking-[3px] text-gray-800 dark:text-gray-200">
-            {skill?.background}
-          </div>
-        </div>
+        )}
         <div className="flex flex-col items-center justify-center">
           <div className="uppercase tracking-[3px] text-gray-500">
             Use Cases

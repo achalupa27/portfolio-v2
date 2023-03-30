@@ -8,11 +8,15 @@
   }
 
   .contact-input {
-    @apply border-b border-blue-400 bg-blue-200/10 px-6 py-4 text-blue-500 placeholder-blue-500/50 outline-none transition-all focus:border-blue-600 focus:text-blue-500 hover:border-blue-500/40 dark:border-amber-900/40  dark:bg-slate-400/10 dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600  dark:focus:text-amber-600  dark:hover:border-amber-600/40;
+    @apply border-b border-blue-400 bg-blue-200/10 px-6 py-4 text-blue-500 placeholder-blue-500/50 outline-none transition duration-500 focus:border-blue-600 focus:text-blue-500 hover:border-blue-500/40 dark:border-amber-900/40 dark:bg-slate-400/10  dark:text-amber-600 dark:placeholder-amber-600/50 dark:focus:border-amber-600 dark:focus:bg-slate-400/20  dark:focus:text-amber-600  dark:hover:border-amber-600/40 dark:hover:bg-slate-400/20;
   }
 
   .gradient-gold {
     @apply bg-gradient-to-br from-[#f59e0b] via-[#ea580c] to-[#d97706] bg-clip-text text-amber-600/40;
+  }
+
+  .hover-gradient-gold {
+    @apply hover:bg-gradient-to-br hover:from-[#f59e0b] hover:via-[#ea580c] hover:to-[#d97706];
   }
 
   .gradient-gold-small {

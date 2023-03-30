@@ -8,7 +8,7 @@ type Props = {
   skills: SkillType[];
 };
 
-function Skills({ skills }: Props) {
+function MoreSkills({ skills }: Props) {
   const [show, setShow] = useState<boolean>(false);
   const [showSkill, setShowSkill] = useState<SkillType>(skills[0]);
   return (
@@ -20,11 +20,11 @@ function Skills({ skills }: Props) {
         className="relative mx-auto flex h-screen min-h-screen max-w-[2000px] flex-col items-center justify-center text-center xl:px-10"
       >
         <h3 className="absolute top-24 text-2xl font-light tracking-[20px] text-blue-500 dark:uppercase dark:text-amber-600">
-          Wisdom
+          Minor Wisdom
         </h3>
         <div className="grid grid-cols-6 gap-3 lg:grid-cols-8 lg:gap-5">
           {skills.map((skill) => {
-            if (skill.level === "Advanced" || skill.level === "Intermediate")
+            if (skill.level === "Learning" || skill.level === "Novice")
               return (
                 <Skill
                   key={skill._id}
@@ -41,4 +41,4 @@ function Skills({ skills }: Props) {
   );
 }
 
-export default Skills;
+export default MoreSkills;

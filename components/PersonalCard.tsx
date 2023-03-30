@@ -54,8 +54,8 @@ function PersonalCard({}: Props) {
           stroke="#60a5fa"
           strokeWidth="1"
           shapeRendering="crispEdges"
-          fill="none"
           vectorEffect="non-scaling-stroke"
+          fill="none"
           variants={variants}
           initial="hidden"
           animate="visible"

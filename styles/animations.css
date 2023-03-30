@@ -21,3 +21,26 @@
 .dark .personalCardInit {
   stroke: rgb(217 119 60);
 }
+
+.scene {
+  perspective: 600px;
+  transform-style: preserve-3d;
+}
+
+.card {
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.is-flipped {
+  transform: rotateY(180deg);
+}

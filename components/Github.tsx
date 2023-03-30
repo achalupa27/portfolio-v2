@@ -1,4 +1,4 @@
-import GitHubCard from "./GitHubCard";
+import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,7 +28,7 @@ function Github({ projects }: Props) {
           target="_blank"
         >
           Github
-          <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+          <ArrowTopRightOnSquareIcon className="h-6 w-6 dark:text-amber-600" />
         </a>
       </h3>
       <Swiper
@@ -45,7 +45,7 @@ function Github({ projects }: Props) {
         {projects?.map((project) =>
           project.isShowcase ? null : (
             <SwiperSlide key={project?._id}>
-              <GitHubCard project={project} />
+              <ProjectCard project={project} />
             </SwiperSlide>
           )
         )}

@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Project } from "../types";
-import WebsiteCard from "./WebsiteCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
+import ProjectCard from "./ProjectCard";
 
 type Props = {
   projects: Project[];
@@ -37,7 +37,7 @@ function Websites({ projects }: Props) {
         {projects?.map((project) =>
           project.isShowcase ? (
             <SwiperSlide key={project?._id}>
-              <WebsiteCard project={project} />
+              <ProjectCard project={project} />
             </SwiperSlide>
           ) : null
         )}
